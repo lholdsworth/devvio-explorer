@@ -1,0 +1,576 @@
+html,body {
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    color:#333;    
+    background:#F5F5F5;
+    height: 100%;
+    line-height: 170%;
+}
+a {
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+a:hover {
+    text-decoration: none;
+}
+.container {
+    max-width: 1300px;
+    padding:0 20px;
+    margin:auto;
+}
+.container:after {
+    content:"";
+    clear: both;
+    display: table;
+}
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -150px; 
+}
+.wrapper:after {
+    content: "";
+    display: block;
+}
+.site-footer, .wrapper:after {
+    height: 150px; 
+}
+
+.loading {
+    text-align: center;
+}
+
+#theBlockVals .loading {
+    padding:50px 0;
+}
+
+/*************************
+BUTTONS
+*************************/
+.btn {
+    border:2px solid #212121;
+    border-radius: 10px;
+    line-height: 50px;
+    padding:0 12px;
+    display: inline-block;
+    text-align: center;
+    margin-top:20px;
+    color:#212121;
+}
+    .btn:hover {
+        background:#212121;
+        color:#fff;
+    }
+
+
+/*************************
+HEADER
+*************************/
+header {
+    padding:20px 0;
+    background:#fff;
+}        
+    .logo {
+        float: left;
+    }
+    a.visitDevvio {
+        float: right;
+        background:#202020;
+        color:#fff;
+        text-decoration: none;
+        line-height: 60px;
+        padding:0 20px;
+        border-radius: 10px;
+        margin-top:15px;
+    }
+    a.visitDevvio:hover {
+        background:#1ABDFA;
+    }
+    .visitDevvio i {
+        margin-left:5px;
+        vertical-align: middle;
+    }
+    .headerSearch {
+        position: absolute;
+        top:35px;
+        left:50%;        
+        margin-left:-200px;
+    }
+    .headerSearch input {
+        width: 400px;
+        margin:0;
+        padding:0;
+        border-radius: 10px;
+        line-height: 1;
+        height: 60px;
+        padding:0 20px;
+        border:none;
+        background:#fff;
+        -webkit-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.05);
+        -moz-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.05);
+        box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.05);  
+    }
+    .headerSearch button {
+        position: absolute;
+        top:0;
+        right:10px;
+        background:none;
+        border:none;
+        height: 60px;
+        font-size: 1.5rem;
+        color:#1ABDFA;
+        cursor: pointer;
+    }
+
+
+/*************************
+CONTENT
+*************************/
+.mainCont {
+    padding:50px 0;
+}
+.box {
+    border-radius:5px;
+    background:#fff;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.05);  
+}
+.boxCont {
+    padding:20px;
+}
+.box h3 {
+    background:#1ABDFA;
+    color:#fff;
+    padding:20px;
+    border-radius:5px 5px 0 0;
+    font-size: 1.4rem;
+}
+
+/** shard summary **/
+
+#shardSummary .box {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+#shardSummary .btn {
+    display: block;
+}
+#shardSummary .box:nth-child(3n) {
+    margin-right: 0;
+}
+#shardSummary .box:nth-child(3n+1){
+    clear: both;
+}
+.shardData {
+    border-radius: 5px;
+    background:#fff;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.05);      
+    margin-bottom:10px;
+}
+.shardData:after {
+    content:"";
+    clear: both;
+    display: table;
+}
+#shardSummary .dataLabel {
+    float: left;
+    width: 30%;
+    font-size: .85rem;        
+    font-weight: 700;
+}
+#shardSummary .dataVal {
+    float: right;
+    width: 60%;
+}
+#shardSummary a {}
+
+/** shard info **/
+
+#shardInfo {
+    font-size: .85rem;
+}
+    #shardInfo:after, .shardInfoVal:after {
+        clear: both;
+        display: table;
+        content:"";
+    }
+    .shardLeft {
+        float: left;
+        width: 30%;
+    }    
+    .shardSearch {
+        margin-bottom:30px;
+    }
+    #shardInfo .shardBlocks {
+        float: right;
+        width: 67%;
+    }
+    .shardBlocks h3 span {
+        font-size: .85rem;
+        display: block;
+        float: right;
+    }
+    .shardInfoHeading {
+        padding:15px 0 20px;
+    }
+    .mobLabel {
+        display: none;
+    }
+    .shardBlocks .col {
+        float: left;
+        line-height: 1;
+        text-align: left;
+        position: relative;
+        overflow: visible;
+    }
+    .shardBlocks .col:nth-child(1){
+        width: 17%;
+    }
+    .shardBlocks .col:nth-child(2){
+        width: 17%;
+    }
+    .shardBlocks .col:nth-child(3){
+        width: 22%;
+    }
+    .shardBlocks .col:nth-child(4){
+        width: 32%;
+    }
+    .shardBlocks .col:nth-child(5){
+        width: 12%;
+    }
+    .shardBlocks .col.phash {
+        cursor: pointer;
+    }
+    .shardInfoHeading {
+        font-weight: bold;
+    }
+    .shardInfoHeading:after {
+        content:"";
+        clear:both;
+        display: table;  
+    }
+    .shardInfoVal {
+        padding:15px 0;
+        border-top:1px solid #dbdbdb;
+    }
+
+#shardData {}
+    #shardData .dataLabel {
+        float: left;
+        font-weight: 700;
+        color:#fff;
+        width: 160px;
+        background:#1ABDFA;
+        padding:15px;
+        border-radius: 5px 0 0 5px;
+    }
+    #shardData .dataVal {
+        padding:15px 15px 15px 180px;
+    }
+    #shardData .dataVal strong {
+        font-size: 1.2rem;
+    }
+
+/** tx info **/
+.txBlocks .col {
+    width: 25%;
+    float: left;
+    line-height: 1;
+    text-align: left;
+    position: relative;
+    overflow: visible;
+}
+
+/*************************
+FOOTER
+*************************/
+footer {
+    background:#fff;
+    padding:30px 0;
+    font-size: .85rem;
+}
+    .social {
+        float: left;
+    }
+    .copyright {
+        float:right;
+        text-align: right
+    }
+    .copyright a {
+        display: block;
+    }
+    .joinComm {
+        float: left;
+        margin-right: 30px;
+        font-weight: bold;
+    }
+    .joinComm ul {
+        list-style: none;
+    }
+    .twitterFeed {
+        float: left;
+    }
+    .joinComm ul li {
+        display: inline-block;
+    }
+    .joinComm ul li a {
+        font-size: 1.5rem;
+        color:#222;
+    }
+
+
+
+/* Tooltip shared base styles */
+.tooltip {
+    width: 300px;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    box-sizing: border-box;
+    height: 0;
+    cursor: default;
+    color: #fff;
+    font-size: 10px;
+    font-size: .8rem;
+    line-height: 170%;
+    text-align: center;
+    word-wrap:break-word;
+    background-color: #373739;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity .3s ease-in .3s;
+}
+
+/* Tooltip visibility class toggled by jQuery */
+.tooltip.isVisible {
+    overflow: visible;
+    clip: auto;
+    width: 300px;
+    height: auto;
+    padding: 15px;
+    opacity: 1;
+}
+
+/* Tooltip positioning */
+/** Common styles: Horizontally Centered **/
+.tooltip, /*** Default is equivalent to .tip-bottom ***/
+.tooltip.tip-bottom,
+.tooltip.tip-top {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+}
+/** Common styles: Bottom positions **/
+.tooltip, /*** Default is equivalent to .tip-bottom ***/
+.tooltip.tip-bottom,
+.tooltip.tip-bottom-left,
+.tooltip.tip-bottom-right {
+    top: 110%;
+    top: calc(100% + 5px);
+}
+/** Common styles: Top positions **/
+.tooltip.tip-top,
+.tooltip.tip-top-left,
+.tooltip.tip-top-right {
+    top: auto;
+    bottom: 110%;
+    bottom: calc(100% + 5px);
+}
+/** Common styles: Corner positions **/
+.tooltip.tip-bottom-left,
+.tooltip.tip-bottom-right,
+.tooltip.tip-top-left,
+.tooltip.tip-top-right {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+}
+/** Common styles: Left corner positions **/
+.tooltip.tip-bottom-left,
+.tooltip.tip-top-left {
+    right: 50%;
+    left: auto;
+    margin-right: -25px;
+}
+/** Common styles: Right corner positions **/
+.tooltip.tip-bottom-right,
+.tooltip.tip-top-right {
+    margin-left: -25px;
+}
+/** Common styles: Vertically Centered **/
+.tooltip.tip-left,
+.tooltip.tip-right {
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+}
+/** Left position only **/
+.tooltip.tip-left {
+    right: 110%;
+    right: calc(100% + 5px);
+    left: auto;
+}
+/** Right position only **/
+.tooltip.tip-right {
+    left: 110%;
+    left: calc(100% + 5px);
+}
+
+/* Tooltip arrow shared base styles */
+.tooltip:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    pointer-events: none;
+}
+/** Common styles: Horizontally Centered, Up/Down arrows **/
+.tooltip:after, /*** Default is equivalent to .tip-bottom:after; ***/
+.tooltip.tip-bottom:after,
+.tooltip.tip-top:after {
+    left: 50%;
+    margin-left: -10px;
+}
+/** Common styles: Up arrow **/
+.tooltip:after, /*** Default is equivalent to .tip-bottom:after; ***/
+.tooltip.tip-bottom:after,
+.tooltip.tip-bottom-left:after,
+.tooltip.tip-bottom-right:after {
+    top: -20px;
+    border-color: transparent transparent #373739 transparent;
+}
+/** Common styles: Down arrow **/
+.tooltip.tip-top:after,
+.tooltip.tip-top-left:after,
+.tooltip.tip-top-right:after{
+    top: auto;
+    bottom: -20px;
+    border-color: #373739 transparent transparent transparent;
+}
+/** Common styles: Left-/Right-aligned, Up/Down arrows **/
+.tooltip.tip-bottom-left:after,
+.tooltip.tip-bottom-right:after,
+.tooltip.tip-top-left:after,
+.tooltip.tip-top-right:after {
+    margin-left: 0;
+}
+/** Common styles: Right-aligned, Up/Down arrows **/
+.tooltip.tip-bottom-left:after,
+.tooltip.tip-top-left:after {
+    right: 15px;
+    left: auto;
+}
+/** Common styles: Left-aligned, Up/Down arrows **/
+.tooltip.tip-bottom-right:after,
+.tooltip.tip-top-right:after {
+    left: 15px;
+}
+/** Common styles: Vertically Centered, Left/Right arrows **/
+.tooltip.tip-left:after,
+.tooltip.tip-right:after {
+    top: 50%;
+    margin-top: -10px;
+    margin-left: auto;
+}
+/** Right arrow **/
+.tooltip.tip-left:after {
+    right: -20px;
+    left: auto;
+    border-color: transparent transparent transparent #373739;
+}
+/** Left arrow **/
+.tooltip.tip-right:after {
+    left: -20px;
+    border-color: transparent #373739 transparent transparent;
+}
+
+
+@media only screen and (max-width: 980px) {
+    .shardLeft {
+        float: none;
+        width: 100%;
+    }
+    #shardInfo .shardBlocks {
+        float: none;
+        width: 100%;
+        margin-top:30px;
+    }
+    #shardData .dataLabel {
+        float: left;
+        width: 150px;
+    }
+    #shardData .dataVal {
+        float: none;
+        width: auto;
+    }
+    #shardData .dataVal {
+        padding-left:165px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .shardInfoHeading {
+        display: none;
+    }
+    .shardBlocks .col {
+        width: 100% !important;
+        float: none;
+        line-height: 1.5rem;
+    }
+    .mobLabel {
+        display: block; 
+        float: left;
+        width: 50%;
+        font-weight: 600;   
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .logo {
+        width: 200px;
+    }
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+    a.visitDevvio {
+        margin-top:10px;
+        padding:0 15px;
+        line-height: 50px;
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .tooltip.isVisible {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .logo {
+        width: 100%;    
+    }
+    .logo img {
+        display: block;
+        max-width: 100%;
+        width: auto;
+        margin: auto;
+    }
+    a.visitDevvio {
+        display: none;
+    }
+}
